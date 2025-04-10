@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                    <a href="https://www.google.com/" target="_blank">IR A GOOGLE</a>
+                </li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="pages/carrito.html">Carrito</a></li>
+                
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Tipos de Listas</h2>
+            <div>
+                <h3>Lista ordenada (pasos):</h3>
+                <ol>
+                    <li>Abrir el editor de código</li>
+                    <li>Escribir HTML</li>
+                    <li>Guardar como .html</li>
+                </ol>
+            </div>
+            <div>
+                <h3>Lista de definiciones:</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Lenguaje de marcado para estructura</dd>
+                    <dt>CSS</dt>
+                    <dd>Lenguaje para estilos</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="multimedia">
+            <h3>imagen con enlace:</h3>
+            <a href="https://www.w3schools.com/html/" target="_blank">
+                <img src="images/code-1076536_640.jpg" alt="imagen de codigo html" width="300">
+            </a>
+            <h3>Reproductor de video:</h3>
+            <video controls loop autoplay width="400">
+                <source src="video/203678-922748476_tiny.mp4" type="video/mp4">
+                <track default src="video/chapters.vtt" kind="subtitles" srclang="es" label="Español" />
+                <track src="video/chaptersEnglish.vtt" kind="subtitles" srclang="en" label="Ingles" />
+            </video>
+        </section>
+        <section id="tablas">
+            <h2>Ejemplo de Tabla</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>$1200</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>$20</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Talento Tech - Ejemplo práctico</p>
+        <!-- Enlace con ruta absoluta -->
+        <a href="https://github.com/miguelDocente/comision25020_FrontEnd_JS.git" target="_blank">Visita nuestro
+            GitHub</a>
+    </footer>
+</body>
+
+</html>
