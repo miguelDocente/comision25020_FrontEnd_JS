@@ -1,0 +1,29 @@
+
+/*selector de id*/
+#titulo-principal{
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px; 
+}
+/* Selector de clase */
+.nav-list {
+    background-color: #f1c40f;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*selector de etiqueta*/
+h1 {
+    color: rgb(255, 85, 0);
+    background-color: rgb(224, 224, 212);
+} 
+
+h1{
+    color: blue;
+}
+
+.item{
+    color: red;
+}
