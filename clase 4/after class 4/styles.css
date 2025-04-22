@@ -1,0 +1,38 @@
+/* selector universal */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* selector de etiqueta */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* selector de clase */
+.subtitulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* selector de id */
+#titulo-principal{
+    color: blue;
+}
+#titulo-principal{
+    color: red;
+}
+/* Explicar la jerarquía: inline > ID > clase > etiqueta */
+main{
+    background-color: #333;
+    padding: 20px;
+}
+
+.caja {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
