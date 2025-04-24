@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
+/* selector de clase */
+.rojo{
+    color: rgb(255, 0, 0);
+    font-family: "Playwrite RO",Helvetica, cursive;
+}
+.verde{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.palabra{
+    font-size: 80px;
+}
+.titulo{
+    color: blueviolet !important;
+}
+/* selector de id */
+#titulo{
+    color: blue;
+}
+
