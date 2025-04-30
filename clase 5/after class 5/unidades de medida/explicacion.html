@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        table th {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+    <title>Unidades de medida</title>
+</head>
+
+<body>
+
+    <h2>Cuadro Explicativo de Unidades de Medida en CSS</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Unidad</th>
+                <th>Uso común</th>
+                <th>Qué hace</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>em</strong></td>
+                <td>Paddings, márgenes, tamaños de fuente, bordes</td>
+                <td>Relativo al tamaño de fuente del elemento actual.</td>
+            </tr>
+            <tr>
+                <td><strong>rem</strong></td>
+                <td>Tamaños de fuente, paddings, márgenes</td>
+                <td>Relativo al tamaño de fuente raíz (<code>html</code> o <code>body</code>).</td>
+            </tr>
+            <tr>
+                <td><strong>%</strong></td>
+                <td>Anchos, altos, márgenes, paddings</td>
+                <td>Relativo al tamaño del contenedor padre.</td>
+            </tr>
+            <tr>
+                <td><strong>vw</strong></td>
+                <td>Anchos de elementos, tamaños responsivos horizontales</td>
+                <td>Relativo al ancho total de la ventana del navegador.</td>
+            </tr>
+            <tr>
+                <td><strong>vh</strong></td>
+                <td>Alturas de elementos, márgenes verticales</td>
+                <td>Relativo a la altura total de la ventana del navegador.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

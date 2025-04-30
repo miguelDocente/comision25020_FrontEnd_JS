@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #673ab7;
+            /* Color violeta para el encabezado */
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+            /* Color gris claro al pasar el mouse */
+        }
+
+        table th {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Cuadro Explicativo de Formatos de Color en CSS</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Formato</th>
+                <th>¿Qué es?</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Palabra</strong></td>
+                <td>Un color predefinido por el navegador.</td>
+                <td><code>blue</code>, <code>red</code>, <code>green</code></td>
+            </tr>
+            <tr>
+                <td><strong>Hexadecimal</strong></td>
+                <td>Combinación de rojo, verde y azul en base 16.</td>
+                <td><code>#ff5733</code></td>
+            </tr>
+            <tr>
+                <td><strong>RGB</strong></td>
+                <td>Combinación de Rojo, Verde y Azul con valores de 0 a 255.</td>
+                <td><code>rgb(60,179,113)</code></td>
+            </tr>
+            <tr>
+                <td><strong>RGBA</strong></td>
+                <td>RGB más valor de opacidad (de 0 a 1).</td>
+                <td><code>rgba(30,144,255,0.5)</code></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

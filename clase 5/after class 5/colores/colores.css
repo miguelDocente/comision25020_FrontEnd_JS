@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Color utilizando nombre de color en palabras */
+.color-palabra {
+    background-color: blue;
+    /* Color por palabra clave */
+    color: white;
+    /* Texto en blanco */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Color utilizando código hexadecimal */
+.color-hexadecimal {
+    background-color: #ff5733;
+    /* Color hexadecimal (naranja-rojizo) */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Color utilizando formato RGB */
+.color-rgb {
+    background-color: rgb(60, 179, 113);
+    /* Color en formato RGB (verde medio) */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Color utilizando formato RGBA (RGB + Alpha para transparencia) */
+.color-rgba {
+    background-color: rgba(30, 144, 255, 0.5);
+    /* Azul con 50% de opacidad */
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}

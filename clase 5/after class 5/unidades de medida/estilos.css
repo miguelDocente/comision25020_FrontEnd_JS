@@ -1,0 +1,65 @@
+        /* La fuente base del body será de 16px (por defecto en la mayoría de navegadores) */
+        body {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* 100% de la altura de la ventana del navegador */
+        }
+
+        .principal{
+            width: 800px;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            width: 80%;
+            /* 80% del ancho disponible */
+            height: 100vh;
+            /* 50% de la altura de la ventana del navegador */
+            margin: 5vh auto;
+            /* 5% de la altura como margen arriba y abajo, centrado horizontalmente */
+            background-color: lightblue;
+            padding: 2rem;
+            /* 2 veces el tamaño de la fuente raíz (16px * 2 = 32px) */
+            border-radius: 1em;
+            /* 1 vez el tamaño de la fuente del elemento actual */
+        }
+
+        /* Título dentro del contenedor */
+        .contenedor h1 {
+            font-size: 1.5rem;
+            /* 2 veces el tamaño de la fuente raíz */
+            margin-bottom: 1em;
+            /* 1 vez el tamaño de la fuente actual */
+        }
+
+        /* Párrafo dentro del contenedor */
+        .contenedor p {
+            font-size: 1rem;
+            /* Igual al tamaño de la fuente raíz */
+            
+        }
+
+        /* Botón dentro del contenedor */
+        .contenedor button {
+            font-size: 1em;
+            /* igual al tamaño de la fuente del contenedor */
+            padding: 0.5em 1em;
+            /* arriba/abajo 0.5em y derecha/izquierda 1em */
+            width: 30vw;
+            /* 30% del ancho de la ventana del navegador */
+            background-color: coral;
+            border: none;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
+
+        .contenedor button:hover {
+            background-color: darkorange;
+        }
+
+        svg{
+            width: 800px;
+            height: 600px;
+        }
