@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  background-color: #f2f2f2;
+  box-sizing: content-box;
+}
+
+
+
+.caja {
+  width: 300px;
+  height: 150px;
+  padding: 50px;
+  border: 5px solid #0077cc;
+  margin: 20px auto;
+  background-color: white;
+
+  /* Propiedad overflow para mostrar scroll */
+  overflow: auto;
+}
+
+/* descomentar para corroborar solapamiento de margenes! */
+
+/* .parrafo {
+  width: 400px;
+  margin-bottom: 20px;
+
+}
+
+p {
+  display: inline-block;
+  margin-top: 40px;
+} */
