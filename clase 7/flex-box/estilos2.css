@@ -1,0 +1,58 @@
+body {
+    background-color: beige;
+}
+
+.caja {
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* comentar align-items: baseline; */
+    /* line-height: 120px; */
+    text-align: center;
+    margin: 5px;
+
+}
+
+.flex-container{
+    border: 1px solid black;
+    background: #ccc;
+    display: flex;
+    /* width: 600px; */
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    gap: 20px;
+
+}
+
+.elemento3{
+    align-self: flex-start;
+}
+
+
+/* .elemento1{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.elemento2{
+    flex-basis: 200px;
+
+}
+.elemento3{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.elemento4{
+    flex-basis: 200px;
+} */

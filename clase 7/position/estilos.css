@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    background-color: #000000;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+div {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.261);
+    border-radius: 5px;
+}
+
+.static,
+.relative,
+.absolute,
+.fixed,
+.sticky {
+    padding: 1rem;
+}
+
+.parent {
+    background-color: #555555;
+}
+
+.static {
+    background-color: #dddddd;
+}
+
+.relative {
+    background-color: #81c476;
+}
+
+.absolute {
+    background-color: #fc9191;
+}
+
+.fixed {
+    background-color: #a8d5e2;
+}
+
+.sticky {
+    background-color: #e1e1ac;
+}
+
+/*----------------------------------- */
+/* CSS Position */
+
+/* es el posicionamiento natural de todos los elementos en html */
+/* .static {
+    position: static;
+} */
+
+/* me permite añadir desplazamientos */
+/* prioridad top y left */
+/* .relative {
+
+    position: relative;
+    top: 60px;
+    left: 40px;
+    bottom: 60px;
+    right: 40px;
+} */
+
+/*-------------------------------------------------------------------------*/
+
+/* se separa del flujo natural,esta como flotando */
+/* .contenedor{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+} */
+
+/*-------------------------------------------------------------------------*/
+/* se sale del flujo natural del documento,como absolute,pero se posiciona con respecto al viewport */
+
+/* .fixed {
+    position: fixed;
+    bottom: 5%;
+    right: 10px;
+} */
+
+/*-------------------------------------------------------------------------*/
+/* .sticky {
+    position: sticky;
+    top: 50vh;
+}
+
+body {
+    height: 300vh;
+} */
+
+/*-------------------------------------------------------------------------*/
+
+/* z-index cambiamos el orden de como se muestran */
+/* .relative {
+    position: relative;
+    right: 20px;
+    top: 10px;
+    z-index: 4;
+}
+.absolute{
+    position: relative;
+    z-index: 2;
+    left: 30px;
+    bottom: 30px;
+}
+
+.static {
+    position: relative;
+    right: 40px;
+    top: 60px;
+    z-index: 3;
+} */
