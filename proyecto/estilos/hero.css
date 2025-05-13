@@ -1,0 +1,57 @@
+.hero {
+    background-image: url('../img/hero4.jpg');
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 5% center;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .hero-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+
+        & h4 {
+            color: #088178;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        & h2 {
+            color: #222;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        & h1 {
+            color: #088178;
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        & p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        & button {
+            background-color: #088178;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        & button:hover {
+            background-color: #066f66;
+        }
+
+    }
+}
