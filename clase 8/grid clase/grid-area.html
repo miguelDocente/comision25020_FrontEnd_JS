@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Grid areas</title>
+  <style>
+    /* La propiedad CSS "grid-template-areas" se utiliza para definir la estructura de una cuadrícula utilizando un enfoque basado en áreas. Esta propiedad acepta una lista de nombres de área separados por espacios y, opcionalmente, guiones para crear una representación visual de la cuadrícula. Cada nombre de área representa una sección rectangular de la cuadrícula */
+    .item {
+      border: 2px solid black;
+      background-color: lightgray; 
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+
+    }
+    
+    .grid-layout {
+      height: 700px;
+      background-color: lightgreen;
+      border: 1px solid black;
+      display: grid;
+      grid-template-rows: 20% 10% auto 10%;
+      grid-template-columns: 80% auto;
+
+      grid-template-areas:
+        'cabecera       cabecera'
+        'menu           menu'
+        'contenido      lateral'
+        'footer         footer';
+    }
+    .cabecera {
+      background-color: lightblue;
+      grid-area: cabecera;
+
+    }
+    .menu {
+      background: lightyellow;
+      grid-area: menu;
+
+    }
+    .contenido {
+      background-color: lightcoral;
+      grid-area: contenido;
+
+    }
+    .barra_lateral {
+      background-color: lightslategray;
+      grid-area: lateral;
+    }
+    .pie_de_pagina {
+      background-color: lightsalmon;
+      grid-area: footer;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-layout">
+    <div class="item cabecera">cabecera</div>
+    <div class="item menu">menu</div>
+    <div class="item contenido">contenido</div>
+    <div class="item barra_lateral">barra lateral</div>
+    <div class="item pie_de_pagina">pie de pagina</div>
+  </div>
+</body>
+
+</html>

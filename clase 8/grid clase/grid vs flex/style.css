@@ -1,0 +1,55 @@
+.flex-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+}
+
+.item {
+    border: 1px solid red;
+    padding: 4px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ----------------------------------------------------------- */
+.my-proyect{
+    /* .container {
+        display: flex;
+        gap: 8px;
+    } */
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+    
+    .item {
+        border: 2px solid green;
+        padding: 8px;
+    }
+    
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        /* Espacio debajo del título principal */
+    }
+    
+    .project-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        /* Espacio debajo del título del proyecto */
+    }
+
+}

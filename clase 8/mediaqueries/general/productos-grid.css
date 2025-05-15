@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Mínimo 300px de ancho por columna, y se ajusta al espacio disponible */
+    gap: 20px;
+}
+
+.card-producto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-producto h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card-producto button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Media Query para pantallas más pequeñas (hasta 600 píxeles de ancho) - Forzar una sola columna */
+@media (max-width: 600px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+        /* Una sola columna que ocupa todo el ancho */
+    }
+}
