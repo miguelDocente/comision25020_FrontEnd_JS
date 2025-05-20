@@ -1,6 +1,8 @@
 /* importaciones de estilos */
 @import url(header.css);
 @import url(hero.css);
+@import url(productos.css);
+
 
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
