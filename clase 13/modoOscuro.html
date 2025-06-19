@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Estilo</title>
+    <style>
+        /* Estilos para el modo claro */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #content{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 2rem;
+        
+        }
+        .light {
+            background-color: #ffffff;
+            color: #121111;
+        }
+
+        /* Estilos para el modo oscuro */
+        .dark {
+            background-color: #1a171a;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Bienvenido a mi página</h1>
+        <p>Esta es una página de ejemplo.</p>
+        <button id="toggleButton">Cambiar Estilo</button>
+    </div>
+    <script >
+        // Seleccionamos el botón y el contenido
+        const button = document.getElementById('toggleButton');
+        console.log(button);
+        let body = document.body;
+
+        // Agregamos un manejador de evento clic al botón
+        toggleButton.addEventListener('click', function() {
+            // Verificamos el color de fondo actual y lo cambiamos
+            if (body.classList.contains('dark')) {
+                body.classList.remove('dark');
+                body.classList.add('light');
+            } else {
+                body.classList.remove('light');
+                body.classList.add('dark');
+            }
+        });
+
+    </script>
+</body>
+</html>

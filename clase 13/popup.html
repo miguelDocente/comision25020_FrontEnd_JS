@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .contenedor-secreto {
+            position: relative;
+            /* Clave para posicionar el popup */
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px dashed #666;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        /* El mensaje oculto (el popup) */
+        .mensaje-secreto {
+            visibility: hidden;
+            /* Oculto por defecto */
+            opacity: 0;
+            /* Transparente por defecto */
+            position: absolute;
+            /* Para que flote */
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            bottom: 120%;
+            /* Arriba de la frase */
+            left: 50%;
+            transform: translateX(-50%);
+            /* Para centrarlo */
+            white-space: nowrap;
+            /* Evita saltos de línea */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            /* Animación suave */
+            z-index: 10;
+            /* Asegura que esté encima */
+        }
+
+        /* Clase que añade JavaScript para mostrar el popup */
+        .mensaje-secreto.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Pequeña flecha del popup */
+        .mensaje-secreto::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            /* En la parte de abajo del popup */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor-secreto">
+        <span>Contenido oculto</span>
+        <div class="mensaje-secreto">
+            ¡Sorpresa! ¡Este es el mensaje!
+        </div>
+    </div>
+    <script>
+        // 1. Obtener los elementos del HTML
+        const contenedor = document.querySelector('.contenedor-secreto');
+        const mensaje = document.querySelector('.mensaje-secreto');
+
+        // 2. Escuchar cuando el ratón entra (mouseover)
+        contenedor.addEventListener('mouseover', () => {
+            mensaje.classList.add('visible'); // Añade la clase 'visible'
+        });
+
+        // 3. Escuchar cuando el ratón sale (mouseout)
+        contenedor.addEventListener('mouseout', () => {
+            mensaje.classList.remove('visible'); // Quita la clase 'visible'
+        });
+
+    </script>
+
+
+</body>
+
+</html>
