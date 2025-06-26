@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.elementos-carrito {
+    border: 1px solid #eee;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.item-carrito:last-child {
+    border-bottom: none;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilo específico para el botón de eliminar individual */
+.btn-eliminar-item {
+    background-color: #ff5722;
+    /* Un rojo anaranjado */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-left: 10px;
+    /* Espacio a la izquierda del nombre del producto */
+}
+
+.btn-eliminar-item:hover {
+    opacity: 0.9;
+}
+
+.volver-a-tienda {
+    display: block;
+    margin-top: 30px;
+}
+
+.volver-a-tienda a {
+    background-color: #555;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.volver-a-tienda a:hover {
+    opacity: 0.8;
+}
