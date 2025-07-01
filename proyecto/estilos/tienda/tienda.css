@@ -1,0 +1,34 @@
+.page-header {
+    background-image: url(../../img/banner/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+    & h2,
+    p {
+        color: #fff;
+    }
+}
+
+.pagination {
+    text-align: center;
+
+    & a {
+        text-decoration: none;
+        background-color: #088178;
+        padding: 15px 20px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 600;
+
+        & i {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}

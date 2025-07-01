@@ -1,0 +1,122 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    & h4 {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    & p {
+        font-size: 13px;
+        margin: 0 0 8px 0;
+    }
+
+    & a {
+        font-size: 13px;
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    .follow {
+        margin-top: 20px;
+
+        & i {
+            color: #465b52;
+            padding-right: 4px;
+            cursor: pointer;
+        }
+    }
+
+    .install {
+        /* & img {
+            margin: 10px 0 15px 0;
+        } */
+
+        .row img {
+            margin: 10px 0 15px 0;
+            border: 1px solid #088178;
+            border-radius: 6px;
+        }
+    }
+
+}
+
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Estilos Responsive para Footer */
+@media (max-width: 1200px) {
+    footer {
+        padding: 40px 60px;
+    }
+    
+    footer .col {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 40px 20px;
+
+        .col {
+            width: 45%;
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    footer {
+        .col {
+            width: 48%;
+        }
+
+        .copyright {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    footer {
+        flex-direction: column;
+
+        .col {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+
+        .copyright {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+    }
+
+}

@@ -1,0 +1,117 @@
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../../img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+
+    & h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    & p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #818ea0;
+    }
+
+    & p span {
+        color: #ffbd27;
+    }
+
+    .form {
+        display: flex;
+        width: 40%;
+
+        & input {
+            height: 3.125rem;
+            padding: 0 1.25rem;
+            font-size: 14px;
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        & button {
+            font-size: 14px;
+            font-weight: 600;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #088178;
+            white-space: nowrap;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: 0.2s;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+
+
+}
+
+
+/* Estilos Responsive para Newsletter */
+@media (max-width: 1200px) {
+    .newsletter {
+        padding: 40px 60px;
+    }
+    
+    .newsletter .form {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .newsletter {
+        .form {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .newstext {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+
+    }
+
+}
+
+@media (max-width: 576px) {
+    .newsletter {
+        padding: 20px 10px;
+
+        & h4 {
+            font-size: 18px;
+        }
+
+        .form {
+
+            width: 100%;
+
+            & button {
+                padding: 12px 15px;
+            }
+
+        }
+    }
+}

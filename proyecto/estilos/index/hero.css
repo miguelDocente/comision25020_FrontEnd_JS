@@ -1,13 +1,14 @@
 .hero {
-    background-image: url('../img/hero4.jpg');
+    background-image: url('../../img/hero4.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     height: 95vh;
     width: 100%;
     background-size: cover;
     background-position: top 5% center;
     padding: 0 80px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    margin-bottom: 40px;
 
     .hero-content {
         width: 50%;
@@ -15,6 +16,7 @@
         flex-direction: column;
         align-items: flex-end;
         text-align: right;
+        z-index: 1;
 
         & h4 {
             color: #088178;
@@ -56,18 +58,18 @@
     }
 }
 
-/* Desktop medio */
-@media (max-width: 1200px) {
 
+/* Estilos Responsive para Hero */
+@media (max-width: 1200px) {
     .hero {
         padding: 0 60px;
-
-        .hero-content {
-            width: 55%;
-        }
+    }
+    
+    .hero .hero-content {
+        width: 55%;
     }
 }
-/* Tablets */
+
 @media (max-width: 992px) {
     .hero {
         height: 85vh;
@@ -118,7 +120,6 @@
     }
 }
 
-/* Móviles */
 @media (max-width: 576px) {
     .hero {
         height: 60vh;

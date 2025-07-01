@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taleno Tech Ecommerce Tutorial</title>
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/hero.css">
-    <title>Taleno Tech Ecommerce Tutorial</title>
+    <!-- estilos -->
+    <link rel="stylesheet" href="./estilos/index/style.css">
 </head>
 
 <body>
@@ -19,19 +20,31 @@
         <div>
             <ul id="navbar" class="navbar">
                 <li><a href="">Home</a></li>
-                <li><a href="">Tienda</a></li>
+                <li><a href="pages/tienda.html">Tienda</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Acerca de</a></li>
                 <li><a href="">Contacto</a></li>
                 <li>
-                    <a href="cart.html">
+                    <a href="./pages/carrito.html">
                         <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     </a>
                 </li>
+                <!-- close button -->
+                <a href="#" id="close" class="close">
+                    <i class="far fa-times" aria-hidden="true"></i>
+                </a>
             </ul>
+        </div>
+        <!-- version responsive -->
+        <div class="mobile">
+            <a href="cart.html">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+            <i id="bar" class="fas fa-outdent "></i>
         </div>
     </header>
     <main>
+        <!-- HERO -->
         <section class="hero">
             <div class="hero-content">
                 <h4>¡Hacé el cambio que necesitás!</h4>
@@ -41,12 +54,13 @@
                 <button>Comprar</button>
             </div>
         </section>
+        <!-- PRODUCTOS -->
         <section class="section-productos section-p1">
             <h2>Electrónica, Moda y Más</h2>
             <p>Ofertas que no te podés perder</p>
             <div class="productos-container">
                 <div class="producto">
-                    <img src="img/productos/auriculares.jpg" alt="producto 1">
+                    <img src="img/productos2/calular.jpg" alt="producto 1">
                     <div class="producto-descripcion">
                         <span>Lorem</span>
                         <h5>Lorem ipsum dolor sit amet.</h5>
@@ -57,7 +71,18 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="img/productos/calular.jpg" alt="producto 1">
+                    <img src="img/productos2/auriculares.jpg" alt="producto 1">
+                    <div class="producto-descripcion">
+                        <span>Lorem</span>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#" class="carrito">
+                        <i class="fal fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="producto">
+                    <img src="img/productos/f7.jpg" alt="producto 1">
                     <div class="producto-descripcion">
                         <span>Lorem</span>
                         <h5>Lorem ipsum dolor sit amet.</h5>
@@ -79,18 +104,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="img/productos/f6.jpg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/productos/tablet.jpg" alt="producto 1">
+                    <img src="img/productos2/tablet.jpg" alt="producto 1">
                     <div class="producto-descripcion">
                         <span>Lorem</span>
                         <h5>Lorem ipsum dolor sit amet.</h5>
@@ -112,7 +126,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="img/productos/proyector.jpg" alt="producto 1">
+                    <img src="img/productos2/proyector.jpg" alt="producto 1">
                     <div class="producto-descripcion">
                         <span>Lorem</span>
                         <h5>Lorem ipsum dolor sit amet.</h5>
@@ -123,7 +137,7 @@
                     </a>
                 </div>
                 <div class="producto">
-                    <img src="img/productos/tablet.jpg" alt="producto 1">
+                    <img src="img/productos2/tablet.jpg" alt="producto 1">
                     <div class="producto-descripcion">
                         <span>Lorem</span>
                         <h5>Lorem ipsum dolor sit amet.</h5>
@@ -136,9 +150,67 @@
 
             </div>
         </section>
+        <!-- BANNER -->
+        <section class="banner section-m1">
+            <h4>Ofertas que no te podés perder</h4>
+            <h2>Hasta <span>70% OFF</span> - Electrónica, Moda y Más</h2>
+            <button>Ver más</button>
+        </section>
+        <!-- NEWSLETTER -->
+        <section class="newsletter section-p1 section-m1">
+            <div class="newstext">
+                <h4>Suscribite al Newsletter</h4>
+                <p>Recibí novedades de nuestra tienda y <span>ofertas exclusivas</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Tu correo electrónico">
+                <button>Suscribirme</button>
+            </div>
+        </section>
+        <!-- FOOTER -->
     </main>
-    
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Av. Siempreviva 742, Ciudad Autónoma de Buenos Aires</p>
+            <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+            <p><strong>Horario:</strong> 9:00 - 18:00, Lunes a Viernes</p>
+            <div class="follow">
+                <h4>Seguinos</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
 
+            </div>
+        </div>
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Iniciar Sesión</a>
+            <a href="#">Ver Carrito</a>
+            <a href="#">Mis Favoritos</a>
+            <a href="#">Seguimiento de Pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+        <div class="col install">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Pasarelas de pago seguras</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© 2025, Nefle Miguel Angél | Talento Tech - Plantilla HTML CSS para Ecommerce</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>

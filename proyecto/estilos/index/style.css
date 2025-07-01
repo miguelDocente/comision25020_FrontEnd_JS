@@ -2,10 +2,14 @@
 @import url(header.css);
 @import url(hero.css);
 @import url(productos.css);
-
-
+@import url(banner.css);
+@import url(newsletter.css);
+@import url(footer.css);
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
 
 
 * {
@@ -61,29 +65,5 @@ body {
   width: 100%;
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
