@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <title>Taleno Tech Ecommerce Tutorial</title>
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+    <!-- estilos -->
     <link rel="stylesheet" href="../estilos/index/style.css">
-    <link rel="stylesheet" href="../estilos/carrito/carrito.css">
+    <link rel="stylesheet" href="../estilos/contacto/contacto.css">
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
                 <li>
                     <a href="./carrito.html" class="active">
                         <i class="fa fa-shopping-bag" aria-hidden="true"></i>
@@ -42,78 +44,61 @@
             <i id="bar" class="fas fa-outdent "></i>
         </div>
     </header>
-
-    <!-- MAIN -->
     <main>
-        <!-- tabla productos -->
-        <section id="cart" class="section-p1">
-            <table width="100%">
-                <thead>
-                    <tr>
-                        <td>ELIMINAR</td>
-                        <td>IMAGEN</td>
-                        <td>PRODUCTO</td>
-                        <td>PRECIO</td>
-                        <td>CANTIDAD</td>
-                        <td>SUBTOTAL</td>
-                    </tr>
-                </thead>
-                <tbody id="tabla_carrito">
-                    <tr>
-                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
-                        <td><img src="../img/productos/f1.jpg" alt="Cartoon Astronaut T-Shirts"></td>
-                        <td>Cartoon Astronaut T-Shirts</td>
-                        <td>$118.19</td>
-                        <td><input type="number" value="1" min="1"></td>
-                        <td>$118.19</td>
-                    </tr>
-                    <tr>
-                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
-                        <td><img src="../img/productos/f2.jpg" alt="Cartoon Astronaut T-Shirts"></td>
-                        <td>Cartoon Astronaut T-Shirts</td>
-                        <td>$118.19</td>
-                        <td><input type="number" value="1" min="1"></td>
-                        <td>$118.19</td>
-                    </tr>
-                    <tr>
-                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
-                        <td><img src="../img/productos/f3.jpg" alt="Cartoon Astronaut T-Shirts"></td>
-                        <td>Cartoon Astronaut T-Shirts</td>
-                        <td>$118.19</td>
-                        <td><input type="number" value="1" min="1"></td>
-                        <td>$118.19</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <!-- FORMULARIO -->
+        <section class="form-details">
+            <form action="" id="formularioContacto">
+                <span>DEJA UN MENSAJE</span>
+                <h2>Queremos saber de ti</h2>
+                <div class="campo-control">
+                    <input type="text" id="tuNombre" placeholder="Tu Nombre">
+                    <div class="texto-error"></div>
+                </div>
 
-        <!-- aplicar cupon / total del carrito -->
-        <section id="cart-add" class="section-p1">
-            <div id="coupon">
-                <h3>Aplicar Cupón</h3>
+                <div class="campo-control">
+                    <input type="text" id="tuCorreo" placeholder="Correo electrónico">
+                    <div class="texto-error"></div>
+                </div>
+
+                <div class="campo-control">
+                    <input type="text" id="asunto" placeholder="Asunto">
+                    <div class="texto-error"></div>
+                </div>
+
+                <div class="campo-control">
+                    <textarea name="" id="tuMensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                    <div class="texto-error"></div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <!-- PERSONAS -->
+            <div class="people">
                 <div>
-                    <input type="text" placeholder="Ingresa tu cupón">
-                    <button class="normal">Aplicar</button>
+                    <img src="../img/people/1.png" alt="">
+                    <p><span>Martín Gómez</span> Gerente Senior de Marketing <br> Teléfono: (011) 4567-8901 <br> Correo
+                        electrónico: contact.martin@example.com</p>
+                </div>
+                <div>
+                    <img src="../img/people/3.png" alt="">
+                    <p><span>Sofía Rodríguez</span> Gerente Senior de Marketing <br> Teléfono: (011) 5678-9012 <br>
+                        Correo electrónico: contact.sofia@example.com</p>
+                </div>
+                <div>
+                    <img src="../img/people/2.png" alt="">
+                    <p><span>Diego Pérez</span> Gerente Senior de Marketing <br> Teléfono: (011) 6789-0123 <br> Correo
+                        electrónico: contact.diego@example.com</p>
                 </div>
             </div>
-
-            <div id="subtotal">
-                <h3>Total del Carrito</h3>
-                <table>
-                    <tr>
-                        <td>Subtotal del Carrito</td>
-                        <td id="total">$335</td>
-                    </tr>
-                    <tr>
-                        <td>Envío</td>
-                        <td>Gratis</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td><strong id="total">$335</strong></td>
-                    </tr>
-                </table>
-                <button class="normal">Proceder al pago</button>
+        </section>
+        <!-- NEWSLETTER -->
+        <section class="newsletter section-p1 section-m1">
+            <div class="newstext">
+                <h4>Suscribite al Newsletter</h4>
+                <p>Recibí novedades de nuestra tienda y <span>ofertas exclusivas</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Tu correo electrónico">
+                <button>Suscribirme</button>
             </div>
         </section>
     </main>
@@ -160,8 +145,9 @@
         </div>
     </footer>
 
+
     <script src="../script/script.js"></script>
-    <script src="../script/carrito.js"></script>
+    <script src="../script/contacto.js"></script>
 </body>
 
 </html>
