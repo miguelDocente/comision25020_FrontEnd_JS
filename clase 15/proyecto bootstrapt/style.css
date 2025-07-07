@@ -1,0 +1,347 @@
+/* Variables de colores */
+:root {
+    --primary-color: #088178;
+    --secondary-color: #E3E6f3;
+    --dark-color: #1a1a1a;
+    --light-gray: #606063;
+    --border-color: #cce7d0;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--dark-color) !important;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.cart-icon {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/hero4.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Productos Section */
+.section-productos {
+    padding: 80px 0;
+}
+
+.section-productos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.section-productos p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    margin-bottom: 50px;
+}
+
+.producto {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.producto:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.producto-descripcion {
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-descripcion span {
+    color: var(--light-gray);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.producto-descripcion h5 {
+    color: var(--dark-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.producto-descripcion h4 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.carrito {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.carrito:hover {
+    background-color: #065a54;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Banner Section */
+.banner {
+    background: url('img/banner/b19.jpg') center/cover no-repeat;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.banner h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.banner span {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.banner .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.newsletter h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.newsletter p {
+    color: var(--light-gray);
+    margin-bottom: 0;
+}
+
+.newsletter span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.newsletter .form-control {
+    border-radius: 25px;
+    border: 1px solid var(--border-color);
+    padding: 12px 20px;
+}
+
+.newsletter .btn {
+    border-radius: 25px;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: 600;
+}
+
+.newsletter .btn:hover {
+    background-color: #065a54;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 60px 0 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+footer p {
+    color: var(--light-gray);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: var(--light-gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons i {
+    color: var(--light-gray);
+    margin-right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: var(--primary-color);
+}
+
+.app-download img {
+    width: 120px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+.payment-methods img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    color: var(--light-gray);
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-productos h2 {
+        font-size: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+}

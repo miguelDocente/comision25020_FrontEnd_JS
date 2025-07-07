@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Smartphone Galaxy Pro",
+        "precio": 299.99,
+        "categoria": "Electrónica",
+        "imagen": "img/productos/celular.jpg",
+        "descripcion": "Smartphone de última generación con pantalla OLED y cámara de 108MP"
+    },
+    {
+        "id": 2,
+        "nombre": "Auriculares Inalámbricos Premium",
+        "precio": 89.99,
+        "categoria": "Audio",
+        "imagen": "img/productos/auriculares.jpg",
+        "descripcion": "Auriculares con cancelación de ruido activa y 30 horas de batería"
+    },
+    {
+        "id": 3,
+        "nombre": "Camisa Elegante Casual",
+        "precio": 45.99,
+        "categoria": "Moda",
+        "imagen": "img/productos/f7.jpg",
+        "descripcion": "Camisa de algodón 100% perfecta para cualquier ocasión"
+    },
+    {
+        "id": 4,
+        "nombre": "Vestido de Temporada",
+        "precio": 67.99,
+        "categoria": "Moda",
+        "imagen": "img/productos/f6.jpg",
+        "descripcion": "Vestido casual cómodo y elegante para el día a día"
+    },
+    {
+        "id": 5,
+        "nombre": "Tablet Pro 11 pulgadas",
+        "precio": 599.99,
+        "categoria": "Electrónica",
+        "imagen": "img/productos/tablet.jpg",
+        "descripcion": "Tablet profesional con procesador de última generación y pantalla Retina"
+    },
+    {
+        "id": 6,
+        "nombre": "Decoración Moderna",
+        "precio": 34.99,
+        "categoria": "Hogar",
+        "imagen": "img/productos/n6.jpg",
+        "descripcion": "Elemento decorativo moderno para dar estilo a tu hogar"
+    },
+    {
+        "id": 7,
+        "nombre": "Proyector HD 4K",
+        "precio": 449.99,
+        "categoria": "Electrónica",
+        "imagen": "img/productos/proyector.jpg",
+        "descripcion": "Proyector de alta definición ideal para presentaciones y entretenimiento"
+    },
+    {
+        "id": 8,
+        "nombre": "Tablet Compacta",
+        "precio": 199.99,
+        "categoria": "Electrónica",
+        "imagen": "img/productos/tablet.jpg",
+        "descripcion": "Tablet ligera y portátil perfecta para estudiantes y trabajo"
+    }
+]
